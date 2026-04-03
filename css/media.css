@@ -239,6 +239,10 @@
 		display: block;
 	}
 
+	.about .item{
+		width: 100%;
+	}
+
 	.about p{
 		font-size: 12px;
 	}
@@ -311,6 +315,10 @@
 		height: 264px!important;
 	}
 
+	.team .items .item .pic{
+		height: 464px!important;
+	}
+
 	.team .item .bottom{
 		padding: 12p 12px 12px;
 	}
@@ -322,6 +330,16 @@
 
 	.team .item p{
 		font-size: 12px;
+	}
+
+	.team .items{
+		margin: 0 -10px;
+	}
+
+	.team .items .item{
+		width: 50%;
+		padding: 0 10px;
+		margin-bottom: 40px;
 	}
 
 	.accii .swiper-slide{
@@ -350,6 +368,106 @@
 		font-size: 12px;
 	}
 
+	.header_inner{
+		border-bottom: 1px solid #717680;
+	}
+
+	.content h1{
+		margin-bottom: 18px;
+		font-size: 20px;
+	}
+
+	.price-list__item .f,
+	.price-list__item .s{
+		font-size: 12px;
+	}
+
+	.action-section{
+		padding-top: 24px;
+		padding-bottom: 50px;
+	}
+
+	.action .col{
+		width: 100%;
+		margin-bottom: 24px;
+	}
+
+	.action .col:last-child{
+		margin-bottom: 0;
+	}
+
+	.label{
+		font-size: 10px;
+	}
+
+	input[type='text'], input[type='password'], input[type='search']{
+		height: 20px;
+		font-size: 10px;
+	}
+
+	.sorting .slider-wrap{
+		margin-right: -10px;
+	}
+
+	.sorting .arrow-append{
+		display: none;
+	}
+
+	.sorting .item{
+		font-size: 16px;
+	}
+
+	.well .in{
+		height: 560px;
+		padding-top: 100px;
+		padding-bottom: 25px;
+	}
+
+	.well .title{
+		margin-bottom: 10px;
+		font-size: 26px;
+	}
+
+	.well .title span{
+		padding-bottom: 10px;
+	}
+
+	.well p{
+		margin-bottom: 24px;
+		font-size: 16px;
+	}
+
+	.well .btn{
+		max-width: 600px;
+	}
+
+	.spec{
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+
+	.spec__left{
+		width: 100%;
+	}
+
+	.spec__right{
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.spec .pic{
+		display: none;
+	}
+
+	.spec p{
+		margin-bottom: 18px;
+		font-size: 12px;
+	}
+
+	.section.bot-0{
+		padding-bottom: 24px;
+	}
+
 }/**1200px**/
 
 @media only screen and (max-width : 1199px){
@@ -369,9 +487,21 @@
 }/**768px**/
 
 @media only screen and (max-width : 767px){
-	
+	.team .items .item{
+		width: 100%;
+	}
 
+	.team .items .item .pic{
+		height: 460px;
+	}
 
+	.well .pic_des{
+		display: none;
+	}
+
+	.well .pic_mob{
+		display: block;
+	}
 
 }/**767px**/
 

@@ -147,6 +147,30 @@
 		    },
 		},
 	});
+
+	var swiper = new Swiper(".swiper-sorting", {
+		slidesPerView: "auto",
+		spaceBetween: 18,
+		loop: true,
+		centeredSlides: false,
+	  	navigation: {
+	    	nextEl: "#swiper-button-next_6",
+	    	prevEl: "#swiper-button-prev_6",
+	  	},
+	  	breakpoints: {
+		    768: {
+		      //slidesPerView: 3,
+		      //spaceBetween: 18,
+		    },
+		    1201: {
+		      //slidesPerView: 3,
+		      //spaceBetween: 18,
+		    	spaceBetween: 40,
+		    },
+		},
+	});
+
+	$('.mask').mask('+7 999 999 99 99');
           
 
 });
