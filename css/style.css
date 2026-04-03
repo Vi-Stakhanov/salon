@@ -1387,6 +1387,11 @@ button:focus{
     line-height: 1.3;
     text-transform: uppercase;
     color: #fff;
+    transition: .3s;
+}
+
+.team .item .in:hover .title{
+    color: #998865;
 }
 
 .team .item .title a{
@@ -1402,6 +1407,11 @@ button:focus{
     font-size: 18px;
     line-height: 1.3;
     color: #fff;
+    transition: .3s;
+}
+
+.team .item .in:hover p{
+    color: #998865;
 }
 
 /**ACCII**/
