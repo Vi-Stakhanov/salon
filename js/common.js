@@ -196,3 +196,7 @@
 
 });
 
+window.onload = function() {
+    var preloader = document.getElementById('preloader');
+    preloader.classList.add('hidden');
+};
