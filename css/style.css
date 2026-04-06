@@ -1187,12 +1187,12 @@ button:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 100%;
     background-image: radial-gradient(83.1% 50% at 16.9% 50%, rgb(153, 136, 101) 0%, rgb(153, 136, 101) 100%);
-    filter: blur(100px);
-    transition: all 450ms ease-out;
+    filter: blur(80px);
+    transition: all 250ms ease-out;
     position: absolute;
     pointer-events: none;
     left: 0;
