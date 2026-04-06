@@ -526,6 +526,12 @@ button:focus{
     flex-shrink: 0;
     margin-left: 12px;
     background: url(../img/icons/arrow_right_gold.svg) center no-repeat;
+    transition: .3s;
+}
+
+.go-to a:hover i{
+    transform: translateX(50px);
+    opacity: 0;
 }
 
 .b-head{
@@ -597,7 +603,26 @@ button:focus{
     top: 0;
     left: 0;
     z-index: 1;
+    /*animation: blur 10s linear infinite;*/
+    transition: 1.2s;
 }
+
+
+
+/*@keyframes blur {
+    0% {
+        background: rgba(43, 43, 43, 0.04);
+
+    }
+    50% {
+        background: rgba(43, 43, 43, 0.22);
+
+    }
+    100% {
+        background: rgba(43, 43, 43, 0.04);
+       
+    }
+}*/
 
 .header_inner:before{
     display: none;
@@ -837,6 +862,7 @@ button:focus{
 .nav ul ul{
     width: 300px;
     display: none;
+    padding-top: 20px;
     padding-bottom: 36px;
     list-style: none;
     position: absolute;
@@ -855,6 +881,7 @@ button:focus{
     left: 50%;
     z-index: 1;
     transform: translateX(-50%);
+    transition: 1.2s;
 }
 
 .nav > ul > li:hover > ul{
@@ -1026,6 +1053,7 @@ button:focus{
     background: #636363;
     position: relative;
     z-index: 3;
+    overflow: hidden;
 }
 
 .intro .pic{
@@ -1092,7 +1120,7 @@ button:focus{
 
 .intro .container{
     position: relative;
-    z-index: 5;
+    z-index: 7;
 }
 
 .intro .item{
@@ -1154,6 +1182,25 @@ button:focus{
     width: 100%;
     max-width: 340px;
 }
+
+.blob{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background-image: radial-gradient(83.1% 50% at 16.9% 50%, rgb(153, 136, 101) 0%, rgb(153, 136, 101) 100%);
+    filter: blur(100px);
+    transition: all 450ms ease-out;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 5;
+}
+
 
 /**CONTENT**/
 .content{
@@ -1497,10 +1544,12 @@ button:focus{
 .btn-up-white:hover,
 .btn-up-white:active{
     background-image: url(../img/icons/up_gold.svg);
+
 }
 
 .serv .item .in:hover .btn-up-white{
     background-image: url(../img/icons/up_gold.svg);
+    transform: translate(5px, -5px);
 }
 
 /**TEAM**/
@@ -1618,6 +1667,7 @@ button:focus{
 
 .team .item .in:hover .btn-up-white{
     background-image: url(../img/icons/up_gold.svg);
+    transform: translate(5px, -10px);
 }
 
 .team .item p{
@@ -1763,6 +1813,7 @@ button:focus{
 
 .accii .item .in:hover .btn-up-white{
     background-image: url(../img/icons/up_gold.svg);
+    transform: translate(5px, -5px);
 }
 
 /**PRICE-LIST**/
@@ -2459,4 +2510,8 @@ button:focus{
 
 .show1200{
     display: none!important;
+}
+
+.wow{
+    visibility: hidden;
 }

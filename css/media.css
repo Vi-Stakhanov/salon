@@ -582,6 +582,10 @@
 		font-size: 12px;
 	}
 
+	.blob{
+		display: none;
+	}
+
 }/**1200px**/
 
 @media only screen and (max-width : 1199px){
@@ -651,6 +655,14 @@
 
 
 
-@media only screen and (min-width : 1200px){
+@media only screen and (min-width : 1201px){
+	.header:hover:before{
+	    backdrop-filter: blur(50px);
+	    background: rgba(43, 43, 43, 0.64);
+	}
 
+	.nav ul ul:hover:before{
+	    backdrop-filter: blur(50px);
+	    background: rgba(43, 43, 43, 0.54);
+	}
 }
