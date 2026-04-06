@@ -468,6 +468,120 @@
 		padding-bottom: 24px;
 	}
 
+	.map-section .overlay{
+		display: none;
+	}
+
+	.map{
+		height: 300px;
+	}
+
+	.contacts__item{
+		width: 100%;
+		padding: 0;
+		margin-top: 18px;
+	}
+
+	.contacts__center{
+		display: block;
+		margin: 0;
+	}
+
+	.contacts p{
+		font-size: 14px;
+	}
+
+	.contacts p span{
+		padding-top: 4px;
+		font-size: 10px;
+	}
+
+	.contacts p.first{
+		margin-bottom: 8px;
+	}
+
+	.contacts{
+		padding-bottom: 50px;
+	}
+
+	.section.top-30{
+		padding-top: 0;
+	}
+
+	.company__left{
+		width: 100%;
+	}
+
+	.company__right{
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.company p{
+		margin-bottom: 18px;
+		font-size: 12px;
+	}
+
+	.company p span, .company p a{
+		font-size: 14px;
+	}
+
+	.advantages__left{
+		width: 100%;
+		padding-bottom: 14px;
+	}
+
+	.advantages__right{
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.advantages .item{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.advantages .item .num{
+		margin-bottom: 12px;
+		font-size: 26px;
+	}
+
+	.advantages .item p{
+		font-size: 12px;
+	}
+
+	.b-head .cols{
+		flex-wrap: wrap;
+	}
+
+	.b-head .col.left{
+		width: 100%;
+	}
+
+	.b-head .col.right{
+		width: 100%;
+		flex-grow: 0;
+	}
+
+	.b-head p{
+		margin-top: 8px;
+		padding-top: 0;
+		font-size: 12px;
+	}
+
+	.cert__left{
+		width: 100%;
+	}
+
+	.cert__right{
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.cert p{
+		font-size: 12px;
+	}
+
 }/**1200px**/
 
 @media only screen and (max-width : 1199px){

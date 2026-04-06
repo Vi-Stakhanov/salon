@@ -170,6 +170,27 @@
 		},
 	});
 
+	var swiper = new Swiper(".swiper-eqi", {
+		slidesPerView: "auto",
+		spaceBetween: 18,
+		loop: true,
+		centeredSlides: false,
+	  	navigation: {
+	    	nextEl: "#swiper-button-next_7",
+	    	prevEl: "#swiper-button-prev_7",
+	  	},
+	  	breakpoints: {
+		    768: {
+		      //slidesPerView: 3,
+		      //spaceBetween: 18,
+		    },
+		    1201: {
+		      //slidesPerView: 3,
+	  			spaceBetween: 22,
+		    },
+		},
+	});
+
 	$('.mask').mask('+7 999 999 99 99');
           
 
