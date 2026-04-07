@@ -656,13 +656,14 @@
 
 
 @media only screen and (min-width : 1201px){
-	.header:hover:before{
+	.header:hover:after{
 	    backdrop-filter: blur(50px);
-	    background: rgba(43, 43, 43, 0.64);
+	    background: rgba(43, 43, 43, 0.5);
+	    opacity: 1;
 	}
 
 	.nav ul ul:hover:before{
-	    backdrop-filter: blur(50px);
-	    background: rgba(43, 43, 43, 0.54);
+	    backdrop-filter: blur(50px)!important;
+	    background: rgba(43, 43, 43, 0.54)!important;
 	}
 }

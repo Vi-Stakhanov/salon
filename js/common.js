@@ -196,7 +196,16 @@
 
 });
 
+
+
 window.onload = function() {
     var preloader = document.getElementById('preloader');
     preloader.classList.add('hidden');
 };
+
+setTimeout(() => {
+  const elements = document.querySelectorAll('.stable');
+  elements.forEach(el => {
+    el.classList.add('no-animation');
+  });
+}, 3000);

@@ -589,16 +589,37 @@ button:focus{
     z-index: 12;
 }
 
+.header{
+    -webkit-animation-name: pointer;
+    animation-name: pointer;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes pointer {
+    0% {
+       pointer-events: none;
+
+    }
+    100% {
+        pointer-events: auto;
+    }
+}
+
 .header_inner{
+    pointer-events: auto;
     position: relative;
+    animation: none;
 }
 
 .header:before{
     content: "";
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(40px);
-    background: rgba(43, 43, 43, 0.04);
+    /*backdrop-filter: blur(40px);*/
+    /*background: rgba(43, 43, 43, 0.04);*/
     position: absolute;
     top: 0;
     left: 0;
@@ -607,22 +628,38 @@ button:focus{
     transition: 1.2s;
 }
 
+.header:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: 1.2s;
+    opacity: 0;
+}
 
+.header.blur:before{
+    -webkit-animation-name: blur;
+    animation-name: blur;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
 
-/*@keyframes blur {
+@keyframes blur {
     0% {
-        background: rgba(43, 43, 43, 0.04);
-
-    }
-    50% {
-        background: rgba(43, 43, 43, 0.22);
+        backdrop-filter: blur(0px);
+        background: rgba(43, 43, 43, 0);
 
     }
     100% {
         background: rgba(43, 43, 43, 0.04);
-       
+        backdrop-filter: blur(40px);
     }
-}*/
+}
 
 .header_inner:before{
     display: none;
@@ -638,13 +675,35 @@ button:focus{
 
 .header__top:before{
     content: "";
-    width: 100%;
     height: 1px;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 49.71%, rgba(255, 255, 255, 0) 100%);
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.header_inner .header__top:before{
+    width: 100%;
+}
+
+.header__top.flat:before{
+    -webkit-animation-name: flat;
+    animation-name: flat;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flat {
+    0% {
+       width: 0; 
+
+    }
+    100% {
+        width: 100%;
+    }
 }
 
 .header__top .container{
@@ -808,6 +867,32 @@ button:focus{
     position: static;
 }
 
+.stable{
+    /*animation-name: stable;
+    animation-duration: 1s;
+    animation-delay: 1.2s;
+    animation-fill-mode: both;*/
+    animation: stable 1s 1.2s both;
+    opacity: 1;
+}
+
+.no-animation {
+  animation: none !important;
+}
+
+
+@keyframes stable {
+    0% {
+       opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
 .nav{
 
 }
@@ -882,6 +967,7 @@ button:focus{
     z-index: 1;
     transform: translateX(-50%);
     transition: 1.2s;
+    will-change: transform;
 }
 
 .nav > ul > li:hover > ul{
