@@ -38,7 +38,7 @@ body{
     background: #2b2b2b;
     position: relative;
     -webkit-font-smoothing: antialiased;
-    
+
 }
 
 * {
@@ -1016,12 +1016,6 @@ button:focus{
     height: 22px;
     background: url(../img/header/burger_white.svg) center no-repeat;
     cursor: pointer;
-}
-
-.burger:focus{
-    background: none;
-    border: none;
-    outline: none;
 }
 
 .burger.active{
