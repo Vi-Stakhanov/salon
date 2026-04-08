@@ -2,7 +2,7 @@
 
  	$('.burger').click(function(){
         $(this).toggleClass('active');
-        $('.menu-mob').toggle();
+        $('.menu-mob').slideToggle(200);
     });
 
     $('.nav-mob .open-1').on('click', function() {
@@ -35,7 +35,7 @@
 
     $('.footer .subtitle').click(function(){
         $(this).toggleClass('active');
-        $(this).next('.footer__full').toggle();
+        $(this).next('.footer__full').slideToggle(200);
     });
 
  	var swiper = new Swiper(".swiper-view", {
