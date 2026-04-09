@@ -693,6 +693,7 @@ button:focus{
 }
 
 .header__top.flat:before{
+    width: 0;
     -webkit-animation-name: flat;
     animation-name: flat;
     -webkit-animation-duration: 4s;
