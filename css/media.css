@@ -587,6 +587,16 @@
 		display: none;
 	}
 
+	.text-block h1,
+	.text-block h2{
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+
+	.text-block p{
+		font-size: 12px;
+	}
+
 }/**1200px**/
 
 @media only screen and (max-width : 1199px){
@@ -620,6 +630,10 @@
 
 	.well .pic_mob{
 		display: block;
+	}
+
+	.accii .items .item{
+		width: 50%;
 	}
 
 }/**767px**/
